@@ -1,0 +1,6 @@
+framework module Pods_Hook_Up {
+  umbrella header "Pods-Hook-Up-umbrella.h"
+
+  export *
+  module * { export * }
+}
