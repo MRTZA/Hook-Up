@@ -24,5 +24,57 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--Home-->
+        <scene sceneID="oh2-GQ-9nG">
+            <objects>
+                <viewController id="6ND-zP-Lj9" customClass="Home" customModule="Hook_Up" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gWp-Mf-kP8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PIy-KS-xMM">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X8f-k2-WhU">
+                                        <rect key="frame" x="15" y="30" width="37" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                        <state key="normal" title="back">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholderLogo" translatesAutoresizingMaskIntoConstraints="NO" id="1XP-rd-Dip">
+                                        <rect key="frame" x="137" y="30" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="2k3-rG-fPQ"/>
+                                            <constraint firstAttribute="width" constant="100" id="nLA-8n-7v9"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.13333333333333333" green="0.039215686274509803" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="X8f-k2-WhU" firstAttribute="top" secondItem="PIy-KS-xMM" secondAttribute="top" constant="30" id="0HI-YY-WWr"/>
+                                    <constraint firstItem="1XP-rd-Dip" firstAttribute="top" secondItem="PIy-KS-xMM" secondAttribute="top" constant="30" id="R8q-2E-AT0"/>
+                                    <constraint firstItem="1XP-rd-Dip" firstAttribute="centerX" secondItem="PIy-KS-xMM" secondAttribute="centerX" id="TsQ-zv-0G6"/>
+                                    <constraint firstItem="X8f-k2-WhU" firstAttribute="leading" secondItem="PIy-KS-xMM" secondAttribute="leading" constant="15" id="fqw-wZ-dxX"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PIy-KS-xMM" firstAttribute="trailing" secondItem="rFL-07-LgL" secondAttribute="trailing" id="0Wy-K8-fAw"/>
+                            <constraint firstItem="PIy-KS-xMM" firstAttribute="top" secondItem="gWp-Mf-kP8" secondAttribute="top" id="1SZ-BX-9Eo"/>
+                            <constraint firstItem="PIy-KS-xMM" firstAttribute="leading" secondItem="rFL-07-LgL" secondAttribute="leading" id="4Lm-cB-vuX"/>
+                            <constraint firstItem="PIy-KS-xMM" firstAttribute="bottom" secondItem="rFL-07-LgL" secondAttribute="bottom" id="iBM-Q9-d9k"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rFL-07-LgL"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wdu-eN-G5M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="793.8530734632684"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="placeholderLogo" width="300" height="300"/>
+    </resources>
 </document>
