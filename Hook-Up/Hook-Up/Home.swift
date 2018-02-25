@@ -8,30 +8,40 @@
 
 import UIKit
 
-class Home: UIViewController
+class Home: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource
 {
+    @IBAction func buttonPressed(_ sender: Any)
+    {
+        self.performSegue(withIdentifier: "goToGroceries", sender: self)
+    }
+    @IBAction func logoutPressed(_ sender: Any)
+    {
+        self.dismiss(animated: false, completion: nil)
+    }
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+    let options = ["groceries", "studying", "rides", "relationships", "rooming", "trade", "games", "events"]
     override func viewDidLoad()
     {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        collectionView.delegate = self
+        collectionView.dataSource = self
     }
 
-    override func didReceiveMemoryWarning()
+    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
     {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        return options.count
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
+    {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "iconCell", for: indexPath) as! IconCell
+        
+        cell.buttonCell.setImage(UIImage (named: options[indexPath.row]), for: .normal)
+        //cell.imageCell.image = UIImage(named: options[indexPath.row])
+        cell.labelCell.text = options[indexPath.row].capitalized
+        
+        return cell
     }
-    */
-
 }
