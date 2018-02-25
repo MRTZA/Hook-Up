@@ -13,6 +13,7 @@
 		AE7C3283204221E400F3DD3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE7C3282204221E400F3DD3B /* Assets.xcassets */; };
 		AE7C3286204221E400F3DD3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE7C3284204221E400F3DD3B /* LaunchScreen.storyboard */; };
 		AE7C328E2042254400F3DD3B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE7C328D2042254400F3DD3B /* GoogleService-Info.plist */; };
+		AE7C329220424B6100F3DD3B /* Sign Up.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7C329120424B6000F3DD3B /* Sign Up.swift */; };
 		B684C65F39B4A18C1CCA130D /* Pods_Hook_Up.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7999C66ACE6090F900057C76 /* Pods_Hook_Up.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		AE7C3285204221E400F3DD3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE7C3287204221E400F3DD3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE7C328D2042254400F3DD3B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AE7C329120424B6000F3DD3B /* Sign Up.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sign Up.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				AE7C3282204221E400F3DD3B /* Assets.xcassets */,
 				AE7C3284204221E400F3DD3B /* LaunchScreen.storyboard */,
 				AE7C3287204221E400F3DD3B /* Info.plist */,
+				AE7C329120424B6000F3DD3B /* Sign Up.swift */,
 			);
 			path = "Hook-Up";
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE7C327E204221E400F3DD3B /* LoginSignup.swift in Sources */,
+				AE7C329220424B6100F3DD3B /* Sign Up.swift in Sources */,
 				AE7C327C204221E400F3DD3B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
